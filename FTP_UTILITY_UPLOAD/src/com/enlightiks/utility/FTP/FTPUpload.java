@@ -29,7 +29,7 @@ import com.enlightks.utility.interfaces.MailServiceInterface;
 /**
  * To upload the file on ftp server
  * 
- * @author Brijesh
+ * @author Praveen
  *
  */
 public class FTPUpload implements FTPUploadInterface {
