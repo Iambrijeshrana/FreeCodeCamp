@@ -1,0 +1,113 @@
+[2016-06-30 12:56:19] INFO  [com.enlightiks.FTPUI.FTPUI:78] - [Main Method started.]
+[2016-06-30 12:56:19] INFO  [com.enlightiks.FTPUI.FTPUI:89] - [createFrame() started....]
+[2016-06-30 12:56:19] INFO  [com.enlightiks.utilitiy.common.LoginUtility:58] - [loadFTPServerProperties() started...]
+[2016-06-30 12:56:19] ERROR [com.enlightiks.utilitiy.common.LoginUtility:85] - [loadFTPServerProperties() Exception is : ]
+java.io.FileNotFoundException: .\path.properties (The system cannot find the file specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.enlightiks.utilitiy.loadproperties.LoadProperties.loadFTPServerProperties(LoadProperties.java:60)
+	at com.enlightiks.utilitiy.loadproperties.LoadProperties.<init>(LoadProperties.java:47)
+	at com.enlightiks.FTPUI.FTPUI.<init>(FTPUI.java:118)
+	at com.enlightiks.FTPUI.FTPUI.createFrame(FTPUI.java:90)
+	at com.enlightiks.FTPUI.FTPUI.main(FTPUI.java:79)
+[2016-06-30 12:56:19] INFO  [com.enlightiks.utilitiy.common.LoginUtility:96] - [loadMailProperties() started...]
+[2016-06-30 12:56:19] ERROR [com.enlightiks.utilitiy.common.LoginUtility:120] - [loadMailProperties() Exception is :]
+java.io.FileNotFoundException: .\Files\path.properties (The system cannot find the path specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.enlightiks.utilitiy.loadproperties.LoadProperties.loadMailProperties(LoadProperties.java:99)
+	at com.enlightiks.utilitiy.loadproperties.LoadProperties.<init>(LoadProperties.java:48)
+	at com.enlightiks.FTPUI.FTPUI.<init>(FTPUI.java:118)
+	at com.enlightiks.FTPUI.FTPUI.createFrame(FTPUI.java:90)
+	at com.enlightiks.FTPUI.FTPUI.main(FTPUI.java:79)
+[2016-06-30 12:56:19] INFO  [com.enlightiks.FTPUI.FTPUI:129] - [initialize() started..]
+[2016-06-30 12:56:19] INFO  [com.enlightiks.utility.download.FTPClientsName:36] - [getDirectoryNames() started...]
+[2016-06-30 12:56:19] INFO  [com.enlightiks.utility.download.FTPClientsName:56] - [getFTPDirectoryNames() started...]
+[2016-06-30 12:56:19] INFO  [com.enlightiks.utilitiy.common.LoginUtility:58] - [loadFTPServerProperties() started...]
+[2016-06-30 12:56:19] ERROR [com.enlightiks.utilitiy.common.LoginUtility:85] - [loadFTPServerProperties() Exception is : ]
+java.io.FileNotFoundException: .\path.properties (The system cannot find the file specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.enlightiks.utilitiy.loadproperties.LoadProperties.loadFTPServerProperties(LoadProperties.java:60)
+	at com.enlightiks.utilitiy.loadproperties.LoadProperties.<init>(LoadProperties.java:47)
+	at com.enlightiks.utilitiy.common.LoginUtility.<init>(LoginUtility.java:24)
+	at com.enlightiks.utility.download.FTPClientsName.getFTPDirectoryNames(FTPClientsName.java:60)
+	at com.enlightiks.utility.download.FTPClientsName.getDirectoryNames(FTPClientsName.java:39)
+	at com.enlightiks.FTPUI.FTPUI.initialize(FTPUI.java:240)
+	at com.enlightiks.FTPUI.FTPUI.<init>(FTPUI.java:119)
+	at com.enlightiks.FTPUI.FTPUI.createFrame(FTPUI.java:90)
+	at com.enlightiks.FTPUI.FTPUI.main(FTPUI.java:79)
+[2016-06-30 12:56:19] INFO  [com.enlightiks.utilitiy.common.LoginUtility:96] - [loadMailProperties() started...]
+[2016-06-30 12:56:19] ERROR [com.enlightiks.utilitiy.common.LoginUtility:120] - [loadMailProperties() Exception is :]
+java.io.FileNotFoundException: .\Files\path.properties (The system cannot find the path specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.enlightiks.utilitiy.loadproperties.LoadProperties.loadMailProperties(LoadProperties.java:99)
+	at com.enlightiks.utilitiy.loadproperties.LoadProperties.<init>(LoadProperties.java:48)
+	at com.enlightiks.utilitiy.common.LoginUtility.<init>(LoginUtility.java:24)
+	at com.enlightiks.utility.download.FTPClientsName.getFTPDirectoryNames(FTPClientsName.java:60)
+	at com.enlightiks.utility.download.FTPClientsName.getDirectoryNames(FTPClientsName.java:39)
+	at com.enlightiks.FTPUI.FTPUI.initialize(FTPUI.java:240)
+	at com.enlightiks.FTPUI.FTPUI.<init>(FTPUI.java:119)
+	at com.enlightiks.FTPUI.FTPUI.createFrame(FTPUI.java:90)
+	at com.enlightiks.FTPUI.FTPUI.main(FTPUI.java:79)
+[2016-06-30 12:56:19] INFO  [com.enlightiks.utilitiy.common.LoginUtility:36] - [loginFTPServer() started... ]
+[2016-06-30 12:56:19] INFO  [com.enlightiks.utilitiy.common.LoginUtility:58] - [loadFTPServerProperties() started...]
+[2016-06-30 12:56:19] ERROR [com.enlightiks.utilitiy.common.LoginUtility:85] - [loadFTPServerProperties() Exception is : ]
+java.io.FileNotFoundException: .\path.properties (The system cannot find the file specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.enlightiks.utilitiy.loadproperties.LoadProperties.loadFTPServerProperties(LoadProperties.java:60)
+	at com.enlightiks.utilitiy.loadproperties.LoadProperties.<init>(LoadProperties.java:47)
+	at com.enlightiks.utilitiy.common.CryptoUtil.<init>(CryptoUtil.java:41)
+	at com.enlightiks.utilitiy.common.LoginUtility.loginFTPServer(LoginUtility.java:39)
+	at com.enlightiks.utility.download.FTPClientsName.getFTPDirectoryNames(FTPClientsName.java:68)
+	at com.enlightiks.utility.download.FTPClientsName.getDirectoryNames(FTPClientsName.java:39)
+	at com.enlightiks.FTPUI.FTPUI.initialize(FTPUI.java:240)
+	at com.enlightiks.FTPUI.FTPUI.<init>(FTPUI.java:119)
+	at com.enlightiks.FTPUI.FTPUI.createFrame(FTPUI.java:90)
+	at com.enlightiks.FTPUI.FTPUI.main(FTPUI.java:79)
+[2016-06-30 12:56:19] INFO  [com.enlightiks.utilitiy.common.LoginUtility:96] - [loadMailProperties() started...]
+[2016-06-30 12:56:19] ERROR [com.enlightiks.utilitiy.common.LoginUtility:120] - [loadMailProperties() Exception is :]
+java.io.FileNotFoundException: .\Files\path.properties (The system cannot find the path specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.enlightiks.utilitiy.loadproperties.LoadProperties.loadMailProperties(LoadProperties.java:99)
+	at com.enlightiks.utilitiy.loadproperties.LoadProperties.<init>(LoadProperties.java:48)
+	at com.enlightiks.utilitiy.common.CryptoUtil.<init>(CryptoUtil.java:41)
+	at com.enlightiks.utilitiy.common.LoginUtility.loginFTPServer(LoginUtility.java:39)
+	at com.enlightiks.utility.download.FTPClientsName.getFTPDirectoryNames(FTPClientsName.java:68)
+	at com.enlightiks.utility.download.FTPClientsName.getDirectoryNames(FTPClientsName.java:39)
+	at com.enlightiks.FTPUI.FTPUI.initialize(FTPUI.java:240)
+	at com.enlightiks.FTPUI.FTPUI.<init>(FTPUI.java:119)
+	at com.enlightiks.FTPUI.FTPUI.createFrame(FTPUI.java:90)
+	at com.enlightiks.FTPUI.FTPUI.main(FTPUI.java:79)
+[2016-06-30 12:56:19] INFO  [com.enlightiks.utilitiy.common.CryptoUtil:107] - [decryptedServerName() started...]
+[2016-06-30 12:56:19] INFO  [com.enlightiks.utilitiy.common.CryptoUtil:58] - [decrypt() started...]
+[2016-06-30 12:56:19] ERROR [com.enlightiks.utility.download.FTPClientsName:87] - [getDirectoryNames(Properties prop) Exception is : ]
+java.lang.NullPointerException
+	at sun.misc.CharacterDecoder.decodeBuffer(Unknown Source)
+	at com.enlightiks.utilitiy.common.CryptoUtil.decrypt(CryptoUtil.java:67)
+	at com.enlightiks.utilitiy.common.CryptoUtil.decryptedServerName(CryptoUtil.java:109)
+	at com.enlightiks.utilitiy.common.LoginUtility.loginFTPServer(LoginUtility.java:41)
+	at com.enlightiks.utility.download.FTPClientsName.getFTPDirectoryNames(FTPClientsName.java:68)
+	at com.enlightiks.utility.download.FTPClientsName.getDirectoryNames(FTPClientsName.java:39)
+	at com.enlightiks.FTPUI.FTPUI.initialize(FTPUI.java:240)
+	at com.enlightiks.FTPUI.FTPUI.<init>(FTPUI.java:119)
+	at com.enlightiks.FTPUI.FTPUI.createFrame(FTPUI.java:90)
+	at com.enlightiks.FTPUI.FTPUI.main(FTPUI.java:79)
+[2016-06-30 12:56:19] ERROR [com.enlightiks.FTPUI.FTPUI:111] - [createFrame() Exception is :]
+java.lang.NullPointerException
+	at com.enlightiks.utility.download.FTPClientsName.getFTPDirectoryNames(FTPClientsName.java:90)
+	at com.enlightiks.utility.download.FTPClientsName.getDirectoryNames(FTPClientsName.java:39)
+	at com.enlightiks.FTPUI.FTPUI.initialize(FTPUI.java:240)
+	at com.enlightiks.FTPUI.FTPUI.<init>(FTPUI.java:119)
+	at com.enlightiks.FTPUI.FTPUI.createFrame(FTPUI.java:90)
+	at com.enlightiks.FTPUI.FTPUI.main(FTPUI.java:79)
+[2016-06-30 12:56:19] INFO  [com.enlightiks.FTPUI.FTPUI:80] - [Main Method complete.]
