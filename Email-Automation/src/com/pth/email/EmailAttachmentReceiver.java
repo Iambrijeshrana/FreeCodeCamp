@@ -1,3 +1,4 @@
+package com.pth.email;
 
 import java.io.File;
 import java.io.IOException;
@@ -139,7 +140,7 @@ public class EmailAttachmentReceiver {
         String host = "pop.gmail.com";
         String port = "995";
         String userName = "pth.querent@gmail.com";
-        String password = "querent123";
+        String password = "*******";
  
         String saveDirectory = "D:/Attachment/Download";
  

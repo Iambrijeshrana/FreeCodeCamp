@@ -1,3 +1,4 @@
+package com.pth.email;
 
 import java.io.File;
 import java.io.IOException;
