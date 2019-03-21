@@ -2,6 +2,7 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="C:/Users/Brijesh Rana/Desktop/jar/apache-logging-log4j.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Brijesh Rana/Desktop/jar/commons-httpclient-3.1-source.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="C:/Users/Brijesh Rana/Desktop/jar/commons-io-2.4.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Brijesh Rana/Desktop/jar/jackson-core-asl-1.8.5.jar"/>

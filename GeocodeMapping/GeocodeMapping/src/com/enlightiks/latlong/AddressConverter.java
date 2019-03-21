@@ -67,7 +67,7 @@ static String longitude=null;
    * or false.
    */
   URL url = new URL(URL + "?latlng="
-    + URLEncoder.encode(latlongString, "UTF-8") + "&key=AIzaSyCkGM5ptGgv-xmUOTRZzRU_fM603GqedwU&sensor=false");
+    + URLEncoder.encode(latlongString, "UTF-8") + "&key=AIzaSyCkGM5ptGgv-xmUOTRZzRU_fM603GqedwU&sensor=true");
   // Open the Connection 
   //https://maps.googleapis.com/maps/api/geocode/json?latlng=18.92038860%2C72.83013059999999&key=AIzaSyCkGM5ptGgv-xmUOTRZzRU_fM603GqedwU&sensor=false
   //System.out.println("url is : "+url);
@@ -83,40 +83,48 @@ static String longitude=null;
  
  public static void main(String[] args) throws IOException {
   
-  GoogleResponse res = new AddressConverter().convertToLatLong("B-2, DAMODAR KRIPA APARTMENTS, GANDHINAGAR, HYDERABAD."+", India");
+ GoogleResponse res = new AddressConverter().convertToLatLong("560068"+", India");
   
   if(res.getStatus().equals("OK"))
   {
    for(Result result : res.getResults())
    {
-	   latitude = result.getGeometry().getLocation().getLat();
-	   longitude = result.getGeometry().getLocation().getLng();
-    System.out.println("Lattitude of address - "  +result.getGeometry().getLocation().getLat());
-    System.out.println("Longitude of address - " + result.getGeometry().getLocation().getLng());
-  //  System.out.println("Location is " + result.getGeometry().getLocation_type());
-    break;
+   latitude = result.getGeometry().getLocation().getLat();
+   longitude = result.getGeometry().getLocation().getLng();
+   System.out.println("Lattitude of address - "  +result.getGeometry().getLocation().getLat());
+   System.out.println("Longitude of address - " + result.getGeometry().getLocation().getLng());
+   System.out.println("Location is " + result.getGeometry().getLocation_type());
+   
+  //  break;
    }
   }
   else
   {
    System.out.println("else block status : "+res.getStatus());
   }
+
+ // https://maps.googleapis.com/maps/api/geocode/json?latlng=12.8498481,77.6544856&key=AIzaSyCkGM5ptGgv-xmUOTRZzRU_fM603GqedwU
+	  
+	//  GoogleResponse rs = new 
   
- // System.out.println("\n");
   
-//  GoogleResponse res1 = new AddressConverter().convertFromLatLong("59.218520,29.959090");  
+
+  
+	// GoogleResponse res1 = new AddressConverter().convertToLatLong("560068");
+//  GoogleResponse res1 = new AddressConverter().convertFromLatLong("12.8498481,77.6544856");  
   GoogleResponse res1 = new AddressConverter().convertFromLatLong(latitude+","+longitude);
   if(res1.getStatus().equals("OK"))
   {
    for(Result result : res1.getResults())
    {
- //   System.out.println("address is :"  +result.getFormatted_address());
+
+    System.out.println("address is :"  +result.getFormatted_address());
     Pattern zipPattern = Pattern.compile("(\\d{6})");
 	Matcher zipMatcher = zipPattern.matcher(result.getFormatted_address());
 	if (zipMatcher.find()) {
 	    String zip = zipMatcher.group(1);
 	    System.out.println("Pin Code - "+zip);
-	    break;
+	//    break;
 	}
    }
   }
