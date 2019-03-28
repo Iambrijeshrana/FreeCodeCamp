@@ -147,8 +147,8 @@ public class EmailReader {
     	
         String host = "pop.gmail.com";
         String port = "995";
-        String userName = "pth.querent@gmail.com";
-        String password = "querent123";
+        String userName = "email@gmail.com";
+        String password = "Password";
         Date startDate = new SimpleDateFormat("yyyy-MM-dd").parse("2019-10-30");
         String c = dateFormat.format(date);
         Date endDate=new SimpleDateFormat("yyyy-MM-dd").parse(c);  
