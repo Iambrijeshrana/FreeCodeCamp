@@ -34,12 +34,12 @@ static String longitude=null;
    * in UTF-8 format. You will get Exception if you don't convert your
    * address in UTF-8 format. Perhaps google loves UTF-8 format. :) In
    * parameter we also need to pass "sensor" parameter. sensor (required
-   * parameter) — Indicates whether or not the geocoding request comes
+   * parameter) â€” Indicates whether or not the geocoding request comes
    * from a device with a location sensor. This value must be either true
    * or false.
    */
   URL url = new URL(URL + "?address="
-    + URLEncoder.encode(fullAddress, "UTF-8") + "&key=AIzaSyCkGM5ptGgv-xmUOTRZzRU_fM603GqedwU&sensor=false");
+    + URLEncoder.encode(fullAddress, "UTF-8") + "&key=GoogleAPIKey&sensor=false");
   //System.out.println("fullAddress is : "+fullAddress);
   //System.out.println("url address is : "+url);
   // Open the Connection
@@ -62,12 +62,12 @@ static String longitude=null;
    * in UTF-8 format. You will get Exception if you don't convert your
    * address in UTF-8 format. Perhaps google loves UTF-8 format. :) In
    * parameter we also need to pass "sensor" parameter. sensor (required
-   * parameter) — Indicates whether or not the geocoding request comes
+   * parameter) â€” Indicates whether or not the geocoding request comes
    * from a device with a location sensor. This value must be either true
    * or false.
    */
   URL url = new URL(URL + "?latlng="
-    + URLEncoder.encode(latlongString, "UTF-8") + "&key=AIzaSyCkGM5ptGgv-xmUOTRZzRU_fM603GqedwU&sensor=true");
+    + URLEncoder.encode(latlongString, "UTF-8") + "&key=GoogleAPIKEY&sensor=true");
   // Open the Connection 
   //https://maps.googleapis.com/maps/api/geocode/json?latlng=18.92038860%2C72.83013059999999&key=AIzaSyCkGM5ptGgv-xmUOTRZzRU_fM603GqedwU&sensor=false
   //System.out.println("url is : "+url);
@@ -103,7 +103,7 @@ static String longitude=null;
    System.out.println("else block status : "+res.getStatus());
   }
 
- // https://maps.googleapis.com/maps/api/geocode/json?latlng=12.8498481,77.6544856&key=AIzaSyCkGM5ptGgv-xmUOTRZzRU_fM603GqedwU
+ // https://maps.googleapis.com/maps/api/geocode/json?latlng=12.8498481,77.6544856&key=GoogleApiKey
 	  
 	//  GoogleResponse rs = new 
   
