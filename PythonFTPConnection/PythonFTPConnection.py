@@ -5,7 +5,6 @@ Created on Thu Apr 18 02:02:39 2019
 @author: Brijesh Rana
 
 ############################################################################################################
-#Client Side Automation Steps
 #1. Check the file availability in FTP Directory and return the flag
 #2. Based on the return flag
     #2.1 If file is available then skip the process
